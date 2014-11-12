@@ -36,6 +36,10 @@
 		95391D671A12440B000EB952 /* DVServerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 95391D661A12440B000EB952 /* DVServerManager.m */; };
 		95391D6A1A12473D000EB952 /* DVMainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95391D691A12473D000EB952 /* DVMainTableViewController.m */; };
 		95391D6D1A124B6B000EB952 /* DVGitUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 95391D6C1A124B6B000EB952 /* DVGitUser.m */; };
+		95391D711A1269E2000EB952 /* DVUserDetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 95391D701A1269E2000EB952 /* DVUserDetailTableViewCell.m */; };
+		95391D741A126A8A000EB952 /* DVUserDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95391D731A126A8A000EB952 /* DVUserDetailTableViewController.m */; };
+		95391D771A134C05000EB952 /* DVGitRepo.m in Sources */ = {isa = PBXBuildFile; fileRef = 95391D761A134C05000EB952 /* DVGitRepo.m */; };
+		95391D7A1A135574000EB952 /* DVSideMenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95391D791A135574000EB952 /* DVSideMenuTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +113,14 @@
 		95391D691A12473D000EB952 /* DVMainTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVMainTableViewController.m; sourceTree = "<group>"; };
 		95391D6B1A124B6B000EB952 /* DVGitUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVGitUser.h; sourceTree = "<group>"; };
 		95391D6C1A124B6B000EB952 /* DVGitUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVGitUser.m; sourceTree = "<group>"; };
+		95391D6F1A1269E2000EB952 /* DVUserDetailTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVUserDetailTableViewCell.h; sourceTree = "<group>"; };
+		95391D701A1269E2000EB952 /* DVUserDetailTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVUserDetailTableViewCell.m; sourceTree = "<group>"; };
+		95391D721A126A8A000EB952 /* DVUserDetailTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVUserDetailTableViewController.h; sourceTree = "<group>"; };
+		95391D731A126A8A000EB952 /* DVUserDetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVUserDetailTableViewController.m; sourceTree = "<group>"; };
+		95391D751A134C05000EB952 /* DVGitRepo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVGitRepo.h; sourceTree = "<group>"; };
+		95391D761A134C05000EB952 /* DVGitRepo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVGitRepo.m; sourceTree = "<group>"; };
+		95391D781A135574000EB952 /* DVSideMenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVSideMenuTableViewController.h; sourceTree = "<group>"; };
+		95391D791A135574000EB952 /* DVSideMenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVSideMenuTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,14 +163,17 @@
 			isa = PBXGroup;
 			children = (
 				95391D221A123C78000EB952 /* Libs */,
+				95391D6E1A126400000EB952 /* Models */,
 				95391CF51A12355D000EB952 /* AppDelegate.h */,
 				95391CF61A12355D000EB952 /* AppDelegate.m */,
-				95391D681A12473D000EB952 /* DVMainTableViewController.h */,
-				95391D691A12473D000EB952 /* DVMainTableViewController.m */,
 				95391D651A12440B000EB952 /* DVServerManager.h */,
 				95391D661A12440B000EB952 /* DVServerManager.m */,
-				95391D6B1A124B6B000EB952 /* DVGitUser.h */,
-				95391D6C1A124B6B000EB952 /* DVGitUser.m */,
+				95391D681A12473D000EB952 /* DVMainTableViewController.h */,
+				95391D691A12473D000EB952 /* DVMainTableViewController.m */,
+				95391D721A126A8A000EB952 /* DVUserDetailTableViewController.h */,
+				95391D731A126A8A000EB952 /* DVUserDetailTableViewController.m */,
+				95391D781A135574000EB952 /* DVSideMenuTableViewController.h */,
+				95391D791A135574000EB952 /* DVSideMenuTableViewController.m */,
 				95391CFB1A12355D000EB952 /* Main.storyboard */,
 				95391CFE1A12355D000EB952 /* Images.xcassets */,
 				95391D001A12355D000EB952 /* LaunchScreen.xib */,
@@ -267,6 +282,19 @@
 			path = "UIKit+AFNetworking";
 			sourceTree = "<group>";
 		};
+		95391D6E1A126400000EB952 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				95391D6F1A1269E2000EB952 /* DVUserDetailTableViewCell.h */,
+				95391D701A1269E2000EB952 /* DVUserDetailTableViewCell.m */,
+				95391D6B1A124B6B000EB952 /* DVGitUser.h */,
+				95391D6C1A124B6B000EB952 /* DVGitUser.m */,
+				95391D751A134C05000EB952 /* DVGitRepo.h */,
+				95391D761A134C05000EB952 /* DVGitRepo.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -373,7 +401,10 @@
 				95391D5D1A124349000EB952 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				95391D6D1A124B6B000EB952 /* DVGitUser.m in Sources */,
 				95391D2C1A123E6B000EB952 /* MFSideMenuShadow.m in Sources */,
+				95391D771A134C05000EB952 /* DVGitRepo.m in Sources */,
+				95391D7A1A135574000EB952 /* DVSideMenuTableViewController.m in Sources */,
 				95391D591A124349000EB952 /* AFURLConnectionOperation.m in Sources */,
+				95391D711A1269E2000EB952 /* DVUserDetailTableViewCell.m in Sources */,
 				95391D621A124349000EB952 /* UIProgressView+AFNetworking.m in Sources */,
 				95391D671A12440B000EB952 /* DVServerManager.m in Sources */,
 				95391D561A124349000EB952 /* AFHTTPSessionManager.m in Sources */,
@@ -384,6 +415,7 @@
 				95391CF71A12355D000EB952 /* AppDelegate.m in Sources */,
 				95391CF41A12355D000EB952 /* main.m in Sources */,
 				95391D5F1A124349000EB952 /* UIAlertView+AFNetworking.m in Sources */,
+				95391D741A126A8A000EB952 /* DVUserDetailTableViewController.m in Sources */,
 				95391D641A124349000EB952 /* UIWebView+AFNetworking.m in Sources */,
 				95391D5E1A124349000EB952 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				95391D551A124349000EB952 /* AFHTTPRequestOperationManager.m in Sources */,
