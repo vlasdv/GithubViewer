@@ -55,7 +55,7 @@
         self.loadingData = NO;
         
     } failure:^(NSError *error, NSInteger statusCode) {
-        NSLog(@"%d: %@",  statusCode, [error localizedDescription]);
+        NSLog(@"%ld: %@",  (long)statusCode, [error localizedDescription]);
     }];
     
 }
