@@ -16,6 +16,7 @@
         self.name = [dictionary objectForKey:@"login"];
         NSString *avatarString = [dictionary objectForKey:@"avatar_url"];
         self.avatarURL = [NSURL URLWithString:avatarString];
+        self.userId = [[dictionary objectForKey:@"id"] integerValue];
     }
     return self;
 }

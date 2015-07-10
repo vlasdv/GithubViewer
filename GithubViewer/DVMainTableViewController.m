@@ -29,6 +29,7 @@
     self.lastUsers = [NSMutableArray array];
     
     [self getUsersFromServer];
+    self.loadingData = YES;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -39,7 +40,9 @@
 
 - (void)getUsersFromServer {
     
-    [[DVServerManager sharedManager] getAllUsersSince:[self.gitUsers count] success:^(NSArray *users) {
+    DVGitUser *lastUser = [self.gitUsers lastObject];
+
+    [[DVServerManager sharedManager] getAllUsersSince:lastUser.userId success:^(NSArray *users) {
     
         [self.gitUsers addObjectsFromArray:users];
         

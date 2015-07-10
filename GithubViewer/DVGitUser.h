@@ -12,6 +12,7 @@
 
 @property (copy, nonatomic) NSString *name;
 @property (strong, nonatomic) NSURL *avatarURL;
+@property (assign, nonatomic) NSInteger userId;
 
 - (DVGitUser *)initWithDictionary:(NSDictionary *)dictionary;
 
